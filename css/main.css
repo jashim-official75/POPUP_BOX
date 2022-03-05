@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background: #ddda1f;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#showPop {
+  padding: 15px 25px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+#showPop:hover {
+  background: rgba(221, 218, 31, 0.5);
+  color: #040255;
+}
+
+#showPop:focus {
+  letter-spacing: 1px;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.cookies_box {
+  position: absolute;
+  left: -400px;
+  bottom: 100px;
+  width: 350px;
+  background: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+.cookies_box-img img {
+  height: 150px;
+  -webkit-animation: animate 10s linear infinite;
+          animation: animate 10s linear infinite;
+}
+
+.cookies_box-heading {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.cookies_box a {
+  display: block;
+  background: rgba(221, 218, 31, 0.5);
+  padding: 15px 0;
+  margin: 10px 0;
+}
+
+.cookies_box a:hover {
+  background: #ddda1f;
+  letter-spacing: 1px;
+}
+
+.cookies_box-secondary_btn {
+  background: none !important;
+}
+
+.cookies_box.active {
+  left: 20px;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+#close_btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 1.8em;
+  cursor: pointer;
+}
+
+#close_btn:hover {
+  color: #ddda1f;
+}
+/*# sourceMappingURL=main.css.map */

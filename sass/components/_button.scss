@@ -1,0 +1,16 @@
+#showPop
+{
+    padding: 15px 25px;
+    @include shadow(0 8px 15px $dark-half);
+    cursor: pointer;
+    &:hover
+    {
+        background: $secondary-color;
+        color: $text-color;
+    }
+    &:focus
+    {
+        letter-spacing: 1px;
+        transform: scale(0.9);
+    }
+}
